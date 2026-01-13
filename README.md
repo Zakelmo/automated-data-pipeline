@@ -11,6 +11,10 @@
 - ✅ Multiple export formats (CSV, JSON, Excel)
 - ✅ Alert management system
 
+
+## App Preview
+https://automated-data-pipeline-aws.streamlit.app/
+
 ## Installation
 
 ```bash
