@@ -542,7 +542,6 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666; padding: 2rem 0;'>
     <h4>AWS Data Pipeline</h4>
-    <p>Built with Streamlit | Simulating S3, Lambda, Glue, Athena | © 2026</p>
-    <p>⭐ Premium Upwork Portfolio Project - Cloud Data Engineering Excellence</p>
+    <p>Built with Streamlit | Simulating S3, Lambda, Glue, Athena | © 2025</p>
 </div>
 """, unsafe_allow_html=True)
