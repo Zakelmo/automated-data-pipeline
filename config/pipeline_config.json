@@ -1,0 +1,36 @@
+{
+  "pipeline": {
+    "name": "advanced-data-pipeline",
+    "version": "2.0.0",
+    "region": "us-east-1"
+  },
+  "s3": {
+    "bucket": "pipeline-data-bucket",
+    "prefixes": {
+      "raw": "raw/",
+      "processed": "processed/",
+      "transformed": "transformed/"
+    }
+  },
+  "glue": {
+    "database": "pipeline_db",
+    "job_timeout": 300,
+    "max_retries": 3,
+    "dpu": 2
+  },
+  "lambda": {
+    "timeout": 60,
+    "memory": 512,
+    "runtime": "python3.9"
+  },
+  "athena": {
+    "database": "analytics_db",
+    "output_location": "s3://athena-results/",
+    "workgroup": "primary"
+  },
+  "monitoring": {
+    "enable_cloudwatch": true,
+    "enable_alerts": true,
+    "log_level": "INFO"
+  }
+}
